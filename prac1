@@ -1,0 +1,38 @@
+package dummy;
+
+import java.util.Scanner;
+
+public class Ass1 {
+	Ass1(int a,int b,int c)
+	{
+	if(a>b&&a>c)
+	{
+		System.out.println("GREATEST IS : "+ a);
+	}
+	else if(b>c) {
+		System.out.println("GREATEST IS : "+b);
+	}
+	else if (c>b) {
+		System.out.println("GREATEST IS : "+c);
+	}
+	else 
+	{
+		System.out.println("ALL ARE EQUAL");
+	}
+	}	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Scanner sc=new Scanner(System.in);
+	   System.out.println("Enter the First Number");
+	   int a=sc.nextInt();
+	  System.out.println("Enter the Second Number");
+	   int b=sc.nextInt();
+	   System.out.println("Enter the Third Number");
+	   int c=sc.nextInt();
+	   
+	   
+	   Ass1 g1=new Ass1(a,b,c);
+	}
+
+}
