@@ -1,0 +1,14 @@
+package dummy;
+
+public class SimpleObject {
+
+	SimpleObject(){
+		System.out.println("Hello I am constructor");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SimpleObject so= new SimpleObject();// as object is declared constructor is called
+
+	}
+
+}
