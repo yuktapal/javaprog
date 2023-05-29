@@ -1,0 +1,40 @@
+package dummy;
+
+class creature{
+	void sound() {
+		System.out.println("Anything");
+	}
+}
+class doggie extends creature{
+	void sound_of_dog() {
+		System.out.println("barking");
+	}
+	void sound() {
+		System.out.println("I am override in dog");
+	}
+}
+class babydog extends doggie{
+	void sound_of_baby() {
+		System.out.println("weeping");
+	}
+	void sound() {
+		super.sound();
+		System.out.println("I am override in babydog");
+	}
+}
+class multipleinheritance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		creature obj1=new doggie();
+		obj1.sound();
+		babydog obj=new babydog();
+		obj.sound();
+		obj.sound_of_dog();
+		obj.sound_of_baby();
+		doggie obj2=new babydog();
+		obj2.sound();
+	}
+
+}
+
