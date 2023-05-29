@@ -1,0 +1,27 @@
+package dummy;
+
+abstract class ani {
+	 abstract void makesound();
+	
+}
+ class Dog extends ani{
+	  void makesound(){
+		 System.out.println("woof");
+	 }
+	  
+ }
+ class Cat extends ani{
+	  void makesound() {
+		 System.out.println("meaw");
+	 }
+ }
+ public class ANIMAL{
+		public static void main(String args[]) {
+			ani obj1 =new Dog();
+			ani obj2=new Cat();
+			obj1.makesound();
+			obj2.makesound();
+		}
+
+	
+ }
