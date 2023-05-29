@@ -1,0 +1,29 @@
+package dummy;
+import java.util.*;
+public class room_class {
+	int room_no;
+	String roomtype;
+	double room_area;
+	boolean Acmachine;
+public void setData(int roomNo,String roomType, double roomarea ,boolean AcMachine) {
+	room_no=roomNo;
+	roomtype=roomType;
+	room_area=roomarea;
+	Acmachine=AcMachine;
+}
+public void display() {
+	System.out.println("Room no :"+ room_no);
+System.out.println("Room Type : "+roomtype);
+System.out.println("Room Area : "+room_area);
+System.out.println("Ac machine "+ (Acmachine ? "yes" :"no"));
+	
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+room_class room =new room_class();
+room.setData(101, "delux", 500.0, true);
+room.display();
+	}
+
+}
