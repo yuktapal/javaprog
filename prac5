@@ -1,0 +1,27 @@
+package dummy;
+
+public class static_demo {
+	// STATIC VARIABLE
+	static int count=0;
+	//STATIC BLOCK 
+	static{
+		 count++; // called first before creating object
+	 }
+	static_demo(){
+		count++;  // static only intialize once
+	}
+	// STATIC METHOD
+	 static void no_of_student() {
+		 System.out.println("Number of student- "+ count);
+	 }
+	 public void No_of_student() {
+		 System.out.println("Number of student- "+ count);
+	 }
+	public static void main(String[] args ) {
+		no_of_student();//STATIC METHOD CAN BE CALL WITHOUT USING OBJECT
+		static_demo s1= new static_demo();
+		s1.No_of_student();
+
+	}
+
+}
