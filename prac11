@@ -1,0 +1,25 @@
+package yukta;
+
+class A {
+	public void show() throws ClassNotFoundException{
+		Class.forName("customException");
+	}
+}
+
+public class THROWS {
+
+	public static void main(String[] args) throws ClassNotFoundException{
+		// TODO Auto-generated method stub
+		A obj = new A();
+		try {
+		obj.show();
+		System.out.println("HI I am running");
+		}
+		
+		catch(ClassNotFoundException e) {
+			System.out.println("Class not found error "+e);
+			//e.printStackTrace();
+		}
+	}
+
+}
